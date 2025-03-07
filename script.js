@@ -27,3 +27,17 @@ function handleMouseMove(e) {
         }
     }
 }
+
+document.getElementById("toggleDescription").addEventListener("click", function() {
+    var paragraph = document.getElementById("description");
+    var button = document.getElementById("toggleDescription");
+
+    // Toggle visibility of the paragraph
+    if (paragraph.style.display === "none") {
+        paragraph.style.display = "block";
+        button.innerText = "hide";
+    } else {
+        paragraph.style.display = "none";
+        button.innerText = "show";
+    }
+});
