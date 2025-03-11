@@ -30,6 +30,11 @@
     src: url("/fonts/GT-America-Regular.otf") format("opentype"); 
 }
 
+@font-face{
+    font-family: "quotes"; 
+    src: url("/fonts/GT-America-Light-Italic.otf") format("opentype"); 
+}
+
 body {
     font-family: Arial, sans-serif;
     height: 100%;
@@ -124,6 +129,36 @@ body {
     font-size: medium; 
 }
 
+.left-container button {
+    color: white;
+    background-color: grey;
+    padding: 10px 20px;
+    font-size: normal;
+    font-weight: bold;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none; 
+}
+
+.left-container p {
+    font-family: "regular", Arial, sans-serif; 
+    font-weight: normal; 
+    font-size: medium; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 120%;
+}
+
+.left-container h3 {
+    font-family: "quotes", Arial, sans-serif; 
+    font-weight: normal; 
+    font-size: 1.25rem; 
+    color: gray;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
 .info {
     display: flex; 
     align-items: center; 
@@ -138,6 +173,35 @@ body {
 .date h2{
     font-weight: normal;
     color: grey;
+}
+
+hr.custom-hr {
+    border: none;
+    border-top: 1px solid lightgrey;
+    margin: 0; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 100%; 
+}
+
+.buttons {
+    display: flex; 
+    align-items: center; 
+    justify-content: end;
+    padding-bottom: 20px;
+    gap: 20px; 
+}
+
+.space {
+    padding-top: 20px;
+}
+
+.left-container h4 {
+    text-align: center;
+    font-family: "regular", Arial, sans-serif; 
+    font-weight: normal; 
+    font-size: small; 
+    color: gray;
 }
 
 /* ------------------ RIGHT ------------------ */ 
