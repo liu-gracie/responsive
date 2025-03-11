@@ -15,9 +15,19 @@
     src: url("/fonts/GT-America-Compressed-Ultra-Light.otf") format("opentype"); 
 }
 
+@font-face {
+    font-family: "headline"; 
+    src: url("/fonts/GT-America-Compressed-Medium.otf") format("opentype"); 
+}
+
 @font-face{
     font-family: "normal"; 
     src: url("/fonts/GT-America-Mono-Light.otf") format("opentype"); 
+}
+
+@font-face{
+    font-family: "regular"; 
+    src: url("/fonts/GT-America-Regular.otf") format("opentype"); 
 }
 
 body {
@@ -26,6 +36,8 @@ body {
     width: 100%;
     background-color: #ffffff;
 }
+
+/* ------------------ HEADER ------------------ */ 
 
 .header {
     background-color: black; 
@@ -72,6 +84,8 @@ body {
 
 }
 
+/* ------------------------------------ */ 
+
 .container {
     display: flex;
     width: 100%;
@@ -80,14 +94,53 @@ body {
     min-width: 600px;
 }
 
+/* ------------------ LEFT ------------------ */ 
+
 .left-container {
     width: 95%; /* Initial width */
     overflow-y: auto;
     padding: 20px;
-    padding-left: 100px; 
-    padding-right: 100px; 
-    background-color: azure;
+    padding-left: 20%; 
+    padding-right: 20%; 
+    background-color: ghostwhite;
 }
+
+.left-container h1 {
+    font-family: "headline", Arial, sans-serif; 
+    font-weight: normal; 
+    padding-top: 20px; 
+    padding-bottom: 10px;
+}
+
+.left-container img {
+    max-width: 100%;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.left-container h2 {
+    font-family: "regular", Arial, sans-serif; 
+    font-weight: normal; 
+    font-size: medium; 
+}
+
+.info {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.arseblog h2{
+    font-weight: normal;
+    color: brown;
+}
+
+.date h2{
+    font-weight: normal;
+    color: grey;
+}
+
+/* ------------------ RIGHT ------------------ */ 
 
 .right-container {
     width: 5%; /* Initial width */
@@ -98,16 +151,6 @@ body {
 
 .right-container h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-
-.article h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.article p {
-    font-size: 1rem;
-    line-height: 1.6;
 }
 
 .divider {
@@ -121,10 +164,21 @@ body {
     left: 95%;
 }
 
+@media (max-width: 1000px) {
+    .left-container {
+        padding-left: 15%; 
+        padding-right: 15%; 
+    }
+
+    .left-container h2 {
+        font-size: small;
+    }
+}
+
 @media (max-width: 600px) {
     .left-container {
-        padding-left: 100px; 
-        padding-right: 100px; 
+        padding-left: 30px; 
+        padding-right: 30px; 
     }
 }
 
