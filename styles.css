@@ -102,7 +102,7 @@ body {
 /* ------------------ LEFT ------------------ */ 
 
 .left-container {
-    width: 95%; /* Initial width */
+    width: 95%; 
     overflow-y: auto;
     padding: 20px;
     padding-left: 20%; 
@@ -118,7 +118,8 @@ body {
 }
 
 .left-container img {
-    max-width: 100%;
+    max-width: 100%; 
+    height: auto; 
     padding-top: 30px; 
     padding-bottom: 30px;
 }
@@ -156,7 +157,17 @@ body {
     font-size: 1.25rem; 
     color: gray;
     padding-top: 20px; 
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+
+.left-container h4 {
+    text-align: center;
+    font-family: "regular", Arial, sans-serif; 
+    font-weight: normal; 
+    font-size: small; 
+    color: gray;
 }
 
 .info {
@@ -196,14 +207,6 @@ hr.custom-hr {
     padding-top: 20px;
 }
 
-.left-container h4 {
-    text-align: center;
-    font-family: "regular", Arial, sans-serif; 
-    font-weight: normal; 
-    font-size: small; 
-    color: gray;
-}
-
 /* ------------------ RIGHT ------------------ */ 
 
 .right-container {
@@ -218,7 +221,8 @@ hr.custom-hr {
 }
 
 .divider {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: black;
     width: 2px;
     cursor: ew-resize;
     height: 100%;
