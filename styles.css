@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-/* Remove text selection highlight */
 ::selection {
     background: transparent; /* No background color */
     color: inherit; /* Keep the original text color */
+}
+
+a{
+    text-decoration: none;
 }
 
 @font-face {
@@ -213,18 +216,87 @@ hr.custom-hr {
     width: 5%; /* Initial width */
     overflow-y: auto;
     padding: 20px;
-    background-color: rgb(253, 237, 237);
+    padding-left: 30px; 
+    padding-right: 30px; 
+    color: deeppink; 
+    background-color: rgb(255, 151, 192);
 }
 
 .right-container h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-align: center; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.image-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-container img {
+    max-width: 30%; 
+    height: auto; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.right-container h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: normal; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    text-align: center;
+}
+
+.poem {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.credits {
+    text-align: center;
+    padding-top: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.credits p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.right-container h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: lighter; 
+    font-size: x-large;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.right-container h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: bolder; 
+    font-size: large; 
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.right-container h6 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: normal; 
+    font-size: small; 
+    color: deeppink;
 }
 
 .divider {
-    /* background-color: transparent; */
-    background-color: black;
+    background-color: transparent;
+    /* background-color: black; */
     width: 2px;
     cursor: ew-resize;
+    
     height: 100%;
     position: absolute;
     top: 0;
@@ -241,12 +313,20 @@ hr.custom-hr {
     .left-container h2 {
         font-size: small;
     }
+
+    .right-container img {
+        max-width: 50%; 
+    }
 }
 
 @media (max-width: 600px) {
     .left-container {
         padding-left: 30px; 
         padding-right: 30px; 
+    }
+
+    .right-container img {
+        max-width: 70%; 
     }
 }
 
